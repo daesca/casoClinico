@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casos Clinicos</title>
+    <link rel="stylesheet" href="css/libraries/ed-grid.css">
+    <link rel="stylesheet" href="css/libraries/splide.min.css">
+    <link rel="stylesheet" href="css/general.css">
+</head>
+<body class="backg-main">
+    <header>
+        <div id="header-udea-logo" class="s-center m-center lg-center xl-center">
+            <img src="img/logos/logo_udea.png" alt="Logo Universidad De Antioquia">
+        </div>
+    </header>
+    <div id="app">
+        <!-- <initial-page></initial-page> -->
+        <router-view @to-location="goToLocation"></router-view>
+    </div>
+    <footer class="backg-dark-green text-white">
+        <div class="ed-container full">
+            <div class="ed-item s-100 m-100 lg-25 xl-25 footer-section">
+                <img src="img/icons/bandera.png" alt="Logo Bandera Colombia" class="m-r-2em">
+                Medellín - Antioquia - Colombia
+            </div>
+            <div class="ed-item s-100 m-100 lg-25 xl-25 footer-section">
+                Todos los derechos reservados &copy;
+            </div>
+            <div class="ed-item s-100 m-100 lg-25 xl-25 footer-section">
+                Falcutad de Medicina Universidad de Antioquia
+            </div>
+            <div class="ed-item s-100 m-100 lg-25 xl-25 footer-section text-center">
+                <img src="img/logos/logo_udea_footer.png" alt="Logo Universidad de Antioquia">
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/libraries/splide.min.js"></script>
+    <script src="./js/libraries/vue.js"></script>
+    <script src="./js/libraries/vue_router.js"></script>
+    
+    <script src="js/components/initialPage.js"></script>
+    <script src="js/components/audioContainer.js"></script>
+    <script src="js/components/complementResources.js"></script>
+
+    <script src="js/components/firstQuestion/firstQuestionIntro.js"></script>
+    <script src="js/components/firstQuestion/firstQuestionChoices.js"></script>
+    <script src="js/components/firstQuestion/firstQuestionChoicesOptionAResult.js"></script>
+    <script src="js/components/firstQuestion/firstQuestionChoicesOptionBResult.js"></script>
+
+    <script src="js/components/secondQuestion/secondQuestionChoices.js"></script>
+
+    <script src="js/components/secondQuestion/secondQuestionChoicesOptionA.js"></script>
+    <script src="js/components/secondQuestion/secondQuestionChoicesOptionAOptionAResult.js"></script>
+    <script src="js/components/secondQuestion/secondQuestionChoicesOptionAOptionBResult.js"></script>
+
+    <script src="js/components/secondQuestion/secondQuestionChoicesOptionB.js"></script>
+    <script src="js/components/secondQuestion/secondQuestionChoicesOptionBOptionAResult.js"></script>
+    <script src="js/components/secondQuestion/secondQuestionChoicesOptionBOptionBResult.js"></script>
+
+    <script src="js/components/secondQuestion/secondQuestionChoicesOptionCResult.js"></script>
+
+    <script src="js/components/thirdQuestion/thirdQuestionIntro.js"></script>
+
+    <script src="js/components/thirdQuestion/thirdQuestionChoices.js"></script>
+
+    <script src="js/components/thirdQuestion/thirdQuestionChoicesOptionA.js"></script>
+    <script src="js/components/thirdQuestion/thirdQuestionChoicesOptionAOptionAResult.js"></script>
+    <script src="js/components/thirdQuestion/thirdQuestionChoicesOptionAOptionBResult.js"></script>
+
+    <script src="js/components/thirdQuestion/thirdQuestionChoicesOptionB.js"></script>
+    <script src="js/components/thirdQuestion/thirdQuestionChoicesOptionBOptionAResult.js"></script>
+    <script src="js/components/thirdQuestion/thirdQuestionChoicesOptionBOptionBResult.js"></script>
+
+    <script src="js/components/finalSection.js"></script>
+    
+    <script src="./js/routes/index.js"></script>
+    
+    <script>
+
+        document.addEventListener( 'DOMContentLoaded', function () {    
+            new Splide( '.splide' ).mount();
+        } );
+
+        const router = VueRouter.createRouter({
+        // 4. Provide the history implementation to use. We are using the hash history for simplicity here.
+        history: VueRouter.createWebHashHistory(),
+        routes: routes, // short for `routes: routes`
+        })
+
+
+        const app = Vue.createApp({
+            components: {
+                'initial-page': initialPage,
+            },
+            methods:{
+
+                goToLocation(location){
+
+                    this.$router.push(location);
+
+                }
+
+            }
+
+        });
+
+        app.use(router);
+
+        app.mount('#app');
+
+    </script>
+</body>
+</html>

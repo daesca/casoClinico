@@ -1,0 +1,389 @@
+body{
+
+    color: #3BBFAD;
+    display: flex;
+
+}
+
+header{
+
+    margin-bottom: auto;
+
+}
+
+footer{
+
+    margin-top: auto;
+
+}
+
+.backg-main{
+
+    background-color: #F3F6FF;
+
+}
+
+.backg-initial{
+
+    background-image: url('../img/backgrounds/tsd.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+
+}
+
+.backg-light-green{
+
+    background-color: #3BBFAD;
+
+}
+
+.backg-dark-green{
+
+    background-color: #007473;
+
+}
+
+.backg-orange{
+
+    background-color: #FFA400;
+
+}
+
+.backg-red{
+
+    background-color: #F5333F;
+
+}
+
+.text-light-green{
+
+    color: #3BBFAD;
+
+}
+
+.text-dark-green{
+
+    color: #007473;
+
+}
+
+.text-white{
+
+    color: #FFFFFF;
+
+}
+
+.text-black{
+
+    color: #000000;
+
+}
+
+.text-center{
+
+    text-align: center;
+
+}
+
+.m-r-2em{
+
+    margin-right: 2em;
+
+}
+
+.text-size-1-2rem{
+
+    font-size: 1.2rem;
+
+}
+
+.btn{
+
+    padding: .5em 1em;
+    border-radius: 20px;
+    border: 1px solid  #F3F6FF;
+    box-shadow: 1px 1px 1px #ccc;
+    color: #007473;
+    font-weight: bold;
+    min-width: 170px;
+    max-width: 200px;
+    margin: 2em auto;
+    display: block;
+
+}
+
+.btn:hover{
+
+    text-decoration: none;
+
+}
+
+.splide__arrow{
+
+    background-color: transparent !important;
+
+}
+
+.splide__arrow--prev{
+
+    left: -2em;
+
+}
+
+.splide__arrow--next{
+
+    right: -2em;
+
+}
+
+.splide__pagination{
+
+    display: none;
+
+}
+
+.image-slider{
+
+    /* width: 800px;
+    margin-left: auto;
+    margin-right: auto; */
+
+}
+
+.title{
+
+    margin: 2.5em 0;
+    text-align: center;
+
+}
+
+.container-circle-logo{
+
+    width: 170px;
+    height: 170px;
+    margin: 2em auto;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.container-circle-logo span{
+
+    width: 100%;
+    text-align: center;
+    margin-top: -3em;
+
+}
+
+.container-circle-logo-alt{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container-circle-logo-alt img{
+    
+    margin-right: 2em;
+
+}
+
+.container-circle-logo-alt span{
+
+    color: #FFFFFF;
+
+}
+
+.pain-chest-alt_lateral{
+
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 300px;
+
+}
+
+.pain-chest-alt_lateral_borders{
+
+    border-radius: 0 50px 50px 0;
+
+}
+
+.pain-chest-alt_lateral .back-icon{
+
+
+
+}
+
+.pain-chest-alt_lateral .globe-icon{
+
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #FFA400;
+    top: 60px;
+    right: -40px;
+
+}
+
+.pain-chest-alt_lateral span{
+
+    transform: rotate(-90deg);
+    position: absolute;
+    right: -80px;
+    bottom: 30px;
+
+}
+
+.container-box{
+
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 2em;
+}
+
+.choice-container{
+
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    height: 300px;
+    text-align: center;
+    padding: 2em;
+    color: inherit;
+    display: block;
+
+}
+
+.choice-container:hover{
+
+    text-decoration: none;
+
+}
+
+.choice-identify{
+
+    background-color: #F5333F;
+    color: #fff;
+    font-weight: bolder;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 1em auto;
+
+}
+
+.choice-identify.big{
+
+    font-size: 2rem;
+    height: 80px;
+    width: 80px;
+
+}
+
+.choice-first-section_options p{
+
+    text-align: center;
+
+}
+
+.audio-container{
+
+    display: flex;
+    align-items: center;
+
+}
+
+.mrl-auto{
+
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.complement-resource_text{
+
+    color: #F5333F;
+    font-weight: bold;
+    font-size: 1.7rem;
+
+}
+
+.complement-resources{
+
+    text-align: center;
+
+}
+
+.complement-resources_icon{
+
+    margin-bottom: 1em;
+
+}
+
+.mr-auto{
+
+    margin-right: auto;
+
+}
+
+.ml-auto{
+
+    margin-left: auto;
+
+}
+
+.lateral-image{
+
+    width: 300px;
+    margin: 0 auto;
+
+}
+
+.mt-2em{
+
+    margin-top: 2em;
+}
+
+ul li::marker{
+
+    color: #F5333F;
+
+}
+
+.d-flex{
+
+    display: flex;
+
+}
+
+.align-items-center{
+
+    align-items: center;
+
+}
+
+.m-none{
+
+    margin: 0 !important;
+
+}
+
+.footer-section{
+
+    display: flex;
+    align-items: center;
+
+}
