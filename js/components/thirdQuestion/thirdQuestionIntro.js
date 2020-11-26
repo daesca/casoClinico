@@ -1,5 +1,11 @@
 const thirdQuestionIntro = {
+    mounted(){
 
+        document.addEventListener( 'DOMContentLoaded', function () {    
+            new Splide( '.splide' ).mount();
+        } );
+
+    },
     template:
     `
         <div class="ed-container">
