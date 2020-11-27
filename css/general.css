@@ -79,24 +79,6 @@ footer{
 
 }
 
-.text-center{
-
-    text-align: center;
-
-}
-
-.m-r-2em{
-
-    margin-right: 2em;
-
-}
-
-.text-size-1-2rem{
-
-    font-size: 1.2rem;
-
-}
-
 .btn{
 
     padding: .5em 1em;
@@ -333,28 +315,11 @@ footer{
 
 }
 
-.mr-auto{
-
-    margin-right: auto;
-
-}
-
-.ml-auto{
-
-    margin-left: auto;
-
-}
-
 .lateral-image{
 
     width: 300px;
     margin: 0 auto;
 
-}
-
-.mt-2em{
-
-    margin-top: 2em;
 }
 
 ul li::marker{
@@ -363,27 +328,22 @@ ul li::marker{
 
 }
 
-.d-flex{
-
-    display: flex;
-
-}
-
-.align-items-center{
-
-    align-items: center;
-
-}
-
-.m-none{
-
-    margin: 0 !important;
-
-}
-
 .footer-section{
 
     display: flex;
     align-items: center;
+
+}
+
+#clinic-history{
+
+    position: absolute;
+    left: -70%;
+
+}
+
+#clinic-history.active{
+
+    left: 0;
 
 }

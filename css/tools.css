@@ -1,0 +1,58 @@
+.d-flex{
+
+    display: flex;
+
+}
+
+.position-relative{
+
+    position: relative;
+
+}
+
+.align-items-center{
+
+    align-items: center;
+
+}
+
+.m-none{
+
+    margin: 0 !important;
+
+}
+
+.mt-2em{
+
+    margin-top: 2em;
+}
+
+.mr-auto{
+
+    margin-right: auto;
+
+}
+
+.ml-auto{
+
+    margin-left: auto;
+
+}
+
+.text-center{
+
+    text-align: center;
+
+}
+
+.m-r-2em{
+
+    margin-right: 2em;
+
+}
+
+.text-size-1-2rem{
+
+    font-size: 1.2rem;
+
+}
