@@ -22,7 +22,7 @@ const secondQuestionChoicesOptionCResult = {
                             va a recibir una <b>nota de remisión inadecuada</b>.
                         </p>
                         <div class="text-center mt-2em">
-                            <a href="javascript:void(0)" class="btn">Volver por intentarlo</a>
+                            <a href="javascript:void(0)" @click="$emit('to-location', 'second')" class="btn">Volver por intentarlo</a>
                         </div>
                     </div>
                 </div>

@@ -4,25 +4,23 @@ const clinicHistory = {
     `
         <div id="clinic-history">
             <div class="ed-container full">
-                <div class="ed-item s-100 m-100 lg-30 xl-30 backg-orange">
-                    <div id="pain-chest-image" class="text-center">
+                <div class="ed-item s-100 m-100 lg-25 xl-25 backg-orange">
+                    <div id="pain-chest-image-alt" class="text-center">
                         <img src="img/pain_chest_image_alt.png" alt="Imagen dolor en el pecho alterna">
                     </div>
                 </div>
-                <div class="ed-item s-100 m-100 lg-45 xl-45 ed-container backg-orange">
-                    <div class="s-100 m-100 lg-50 xl-50">
+                <div class="ed-item s-100 m-100 lg-35 xl-35 backg-orange">
+
+                    <div class="d-flex">
                         <div class="container-circle-logo-alt">
                             <img src="img/icons/edad.png" alt="Edad">
                             <span><b>47 años</b></span>
                         </div>
-                    </div>
-                    <div class="s-100 m-100 lg-50 xl-50">
                         <div class="container-circle-logo-alt">
                             <img src="img/icons/dolor.png" alt="Dolor">
                             <span><b>Tengo dolor en el pecho</b></span>
                         </div>
-                    </div> 
-                    <div class="s-100 m-100 lg-100 xl-100">
+                    </div>
                         <p class="text-center text-black">
                             Viene hace <b>3 días</b> con sensación <b>opresiva en tórax</b> que solo aparece en relación
                             con el esfuerzo físico, presento dos episodios el día de hoy con dolor esternal,
@@ -37,8 +35,7 @@ const clinicHistory = {
                             EF: PA: 143/98, FC: 80/min FR: 20/ min, 
                             Buenas condiciones generales No hay 
                             hallazgos anormales 
-                        </p>
-                    </div>  
+                        </p>  
                 </div>
                 <div class="ed-item s-100 m-100 lg-10 xl-10 backg-orange pain-chest-alt_lateral_borders">
                     <a href="javascript:void(0)" @click="activeSection" class="pain-chest-alt_lateral">

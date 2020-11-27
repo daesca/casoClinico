@@ -1,6 +1,6 @@
 body{
 
-    color: #3BBFAD;
+    color: #007473;
     display: flex;
 
 }
@@ -8,6 +8,15 @@ body{
 header{
 
     margin-bottom: auto;
+
+}
+
+#header-udea-logo{
+
+    width: 400px;
+    margin: 2.5em auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px #e4e4e4;
 
 }
 
@@ -67,24 +76,12 @@ footer{
 
 }
 
-.text-white{
-
-    color: #FFFFFF;
-
-}
-
-.text-black{
-
-    color: #000000;
-
-}
-
 .btn{
 
     padding: .5em 1em;
     border-radius: 20px;
     border: 1px solid  #F3F6FF;
-    box-shadow: 1px 1px 1px #ccc;
+    box-shadow: 1px 1px 1px #ccc, -2px -2px 0 #fff;
     color: #007473;
     font-weight: bold;
     min-width: 170px;
@@ -136,6 +133,7 @@ footer{
 
     margin: 2.5em 0;
     text-align: center;
+    color: #007473;
 
 }
 
@@ -166,6 +164,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin:2em 1em 1em 1em;
 
 }
 
@@ -178,6 +177,14 @@ footer{
 .container-circle-logo-alt span{
 
     color: #FFFFFF;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#pain-chest-image-alt{
+
+    width: 350px;
+    margin-left: auto;
 
 }
 
@@ -222,7 +229,7 @@ footer{
     transform: rotate(-90deg);
     position: absolute;
     right: -80px;
-    bottom: 30px;
+    bottom: 60px;
 
 }
 
@@ -241,8 +248,9 @@ footer{
     height: 300px;
     text-align: center;
     padding: 2em;
-    color: inherit;
     display: block;
+    color: #007473;
+    box-shadow: 0px 0px 15px #ececec;
 
 }
 
@@ -264,6 +272,7 @@ footer{
     align-items: center;
     border-radius: 50%;
     margin: 1em auto;
+    box-shadow: 0px 10px 7px #ccc;
 
 }
 
@@ -285,13 +294,6 @@ footer{
 
     display: flex;
     align-items: center;
-
-}
-
-.mrl-auto{
-
-    margin-left: auto;
-    margin-right: auto;
 
 }
 
@@ -317,7 +319,7 @@ footer{
 
 .lateral-image{
 
-    width: 300px;
+    width: 400px;
     margin: 0 auto;
 
 }
@@ -338,12 +340,28 @@ ul li::marker{
 #clinic-history{
 
     position: absolute;
-    left: -70%;
+    left: -1270px;
+    transition: left .5s;
+    width: 1900px;
 
 }
 
 #clinic-history.active{
 
     left: 0;
+
+}
+
+#complement-resources{
+
+    margin: 3em 0;
+
+}
+
+#complement-resources .ed-container{
+
+    padding: 2em;
+    border-radius: 20px;
+    box-shadow: 2px 2px 1px #e2e2e2;
 
 }

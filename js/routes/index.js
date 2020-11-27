@@ -54,7 +54,7 @@ const routes = [
     },
     {
 
-        path: '/second-choices-a-option-a-result',
+        path: '/second-choices-a-option-b-result',
         component: secondQuestionChoicesOptionAOptionBResult
 
 

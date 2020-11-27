@@ -33,7 +33,7 @@ const secondQuestionChoices = {
                     </a>
                 </div>
                 <div class="ed-item s-100 m-100 lg-1-3 xl-1-3">
-                    <a href="javascript:void(0)" @click="$emit('to-location', '/first-choices-c-result')" class="choice-container">
+                    <a href="javascript:void(0)" @click="$emit('to-location', '/second-choices-c-result')" class="choice-container">
                         <div class="choice-identify">
                             C
                         </div>
