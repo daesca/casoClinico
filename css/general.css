@@ -2,6 +2,7 @@ body{
 
     color: #007473;
     display: flex;
+    background-color: #F3F6FF;
 
 }
 
@@ -26,11 +27,12 @@ footer{
 
 }
 
-.backg-main{
+#app{
 
-    background-color: #F3F6FF;
+    display: flex;
 
 }
+
 
 .backg-initial{
 
@@ -123,9 +125,11 @@ footer{
 
 .image-slider{
 
-    /* width: 800px;
-    margin-left: auto;
-    margin-right: auto; */
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1em;
 
 }
 
@@ -206,7 +210,17 @@ footer{
 
 .pain-chest-alt_lateral .back-icon{
 
-
+    color: orange;
+    background-color: #fff;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
 
 }
 
@@ -230,6 +244,7 @@ footer{
     position: absolute;
     right: -80px;
     bottom: 60px;
+    width: 160px;
 
 }
 
@@ -241,7 +256,7 @@ footer{
     padding: 2em;
 }
 
-.choice-container{
+.choice-container, .choice-container-alt{
 
     background-color: #FFFFFF;
     border-radius: 20px;
@@ -254,7 +269,13 @@ footer{
 
 }
 
-.choice-container:hover{
+.choice-container-alt{
+
+    height: 400px;
+
+}
+
+.choice-container:hover, .choice-container-alt:hover{
 
     text-decoration: none;
 
@@ -308,6 +329,13 @@ footer{
 .complement-resources{
 
     text-align: center;
+    color: inherit;
+
+}
+
+.complement-resources:hover{
+
+    text-decoration: none;
 
 }
 
@@ -339,16 +367,107 @@ ul li::marker{
 
 #clinic-history{
 
-    position: absolute;
-    left: -1270px;
+    position: fixed;
+    left: -1150px;
     transition: left .5s;
-    width: 1900px;
+    width: 1200px;
+    z-index: 100;
+    height: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
 
 }
 
 #clinic-history.active{
 
     left: 0;
+
+}
+
+#cardiogram-alt{
+
+    background-color: #007473;
+    position: fixed;
+    width: 70%;
+    height: 100%;
+    top: 0;
+    right: -70%;
+    transition: right 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#cardiogram-alt.active{
+
+    right: 0;
+
+}
+
+#cardiogram-alt .cardiogram-alt_franja{
+
+    position: absolute;
+    background-color: #007473;
+    left: -54px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    width: 55px;
+    margin-top: auto;
+    bottom: 0;
+    top: 0;
+    margin-bottom: auto;
+    justify-content: flex-start;
+    border-radius: 50px 0 0 50px;
+    color: #FFF;
+
+}
+
+#cardiogram-alt .cardiogram-alt_franja-icon{
+
+    background-color: #007473;
+    position: absolute;
+    left: -50px;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    display: flex;
+    top: 70px;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+#cardiogram-alt .cardiogram-alt_franja-text{
+
+    transform: rotate(-90deg);
+    font-weight: 900;
+    position: absolute;
+    width: 220px;
+    left: -84px;
+
+}
+
+#cardiogram-alt .cardiogram-alt_icon-right{
+
+    position: absolute;
+    top: 0;
+    left: 66px;
+    cursor: pointer;
+}
+
+#cardiogram-alt .cardiogram-alt_cardiogram{
+
+    width: 80%;
+
+}
+
+#cardiogram-alt .cardiogram-alt_cardiogram .image-slider{
+
+
 
 }
 
