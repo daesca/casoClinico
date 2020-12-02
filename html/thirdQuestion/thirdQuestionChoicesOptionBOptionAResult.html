@@ -142,11 +142,11 @@
         <div class="ed-container">
             <div class="ed-item s-100 mt-2em">
                 <div class="audio-container">
-                    <div class="audio-container_icon">
+                    <div class="audio-container_icon" onclick="wavesurfer.playPause()">
                         <img src="../../img/icons/play.png" alt="Boton Play">
                     </div>
-                    <div class="audio-container_sound">
-                        Ondas de audio
+                    <div class="audio-wave-container">
+                        <div id="waveform"></div>
                     </div>
                 </div>
             </div>
@@ -210,7 +210,18 @@
         </div>
     </footer>
     <script src="../../js/libraries/splide.min.js"></script>
+    <script src="../../js/libraries/wavesurfer.js"></script>
     <script>
+
+        let wavesurfer = WaveSurfer.create({
+            container: '#waveform',
+            waveColor: '#007473',
+            progressColor: '#007473',
+            responsive: true,
+            height: 30,        
+        });
+
+        wavesurfer.load('../../audios/p3_opB_opA.mp3');
 
         document.addEventListener( 'DOMContentLoaded', function () {    
             new Splide( '.splide' ).mount();

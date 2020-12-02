@@ -83,7 +83,7 @@ footer{
     padding: .5em 1em;
     border-radius: 20px;
     border: 1px solid  #F3F6FF;
-    box-shadow: 1px 1px 1px #ccc, -2px -2px 0 #fff;
+    box-shadow: 2px 2px 2px #ccc, -2px -2px 0 #fff;
     color: #007473;
     font-weight: bold;
     min-width: 170px;
@@ -315,6 +315,27 @@ footer{
 
     display: flex;
     align-items: center;
+
+}
+
+.audio-container_icon{
+
+    cursor: pointer;
+
+}
+
+.audio-wave-container{
+
+    width: 100%;
+    box-shadow: -1px -1px 3px #c2c2c2;;
+    border-radius: 25px;
+    padding: .5em;
+
+}
+
+.audio-wave-container #waveform{
+
+    width: 100%;
 
 }
 
