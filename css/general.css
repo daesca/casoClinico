@@ -6,6 +6,18 @@ body{
 
 }
 
+ul{
+
+    list-style: initial;
+
+}
+
+ul li{
+
+    margin-bottom: .5em;
+
+}
+
 header{
 
     margin-bottom: auto;
@@ -58,7 +70,7 @@ footer .ed-container{
 
 }
 
-@media (min-width: 320px) and (max-width: 480px){
+@media (min-width: 320px) and (max-width: 1024px){
 
     .backg-initial{
 
@@ -176,7 +188,7 @@ footer .ed-container{
 
 }
 
-@media (min-width: 320px) and (max-width: 480px){
+@media (min-width: 320px) and (max-width: 1200px){
 
     .image-slider{
 
@@ -503,15 +515,74 @@ ul li::marker{
 
 }
 
+@media (min-width: 981px) and (max-width: 1225px){
+
+    #clinic-history{
+
+        left: -90%;
+        width: 95%;
+    
+    }
+
+}
+
 #clinic-history-responsive{
 
     position: fixed;
     transition: left .5s;
     z-index: 100;
+    height: 100%;
+    width: 100%;
     background-color: #FFA400;
     top: 0;
+    left: -100%;
     display: none;
     align-items: center;   
+
+}
+
+#clinic-history-responsive .pain-chest-alt_lateral_borders{
+
+    width: 125px;
+    height: 50px;
+    position: absolute;
+    right: -80px;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+
+#clinic-history-responsive .pain-chest-alt_lateral .back-icon{
+
+    margin-right: 2em;
+    position: static;
+
+}
+
+#clinic-history-responsive .pain-chest-alt_lateral{
+
+    align-items:center;
+    height: initial;
+    background-color: #FFA400;
+    border-radius: 50px;
+
+}
+
+#clinic-history-responsive .pain-chest-alt_lateral .globe-icon{
+    
+    position: static;
+
+}
+
+@media (min-width: 320px) and (max-width: 980px){
+
+    #clinic-history-responsive{
+
+        display: flex;
+
+    }
 
 }
 
@@ -530,7 +601,7 @@ ul li::marker{
 
 }
 
-@media (min-width: 320px) and (max-width: 480px){
+@media (min-width: 320px) and (max-width: 980px){
 
     #clinic-history{
 
@@ -538,17 +609,13 @@ ul li::marker{
 
     }
 
-    #clinic-history-responsive{
-
-
-
-    }
 
 }
 
-#clinic-history.active{
+#clinic-history.active, #clinic-history-responsive.active{
 
     left: 0;
+    z-index: 200;
 
 }
 
@@ -564,12 +631,25 @@ ul li::marker{
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 100;
+
+}
+
+@media (min-width: 320px) and (max-width: 980px){
+
+    #cardiogram-alt{
+
+        right: -100%;
+        width: 100%;
+
+    }
 
 }
 
 #cardiogram-alt.active{
 
     right: 0;
+    z-index: 200;
 
 }
 
@@ -592,6 +672,16 @@ ul li::marker{
 
 }
 
+@media (min-width: 320px) and (max-width: 980px){
+
+    #cardiogram-alt .cardiogram-alt_franja{
+
+        height: 70px;
+
+    }
+
+}
+
 #cardiogram-alt .cardiogram-alt_franja-icon{
 
     background-color: #007473;
@@ -608,6 +698,17 @@ ul li::marker{
     
 }
 
+@media (min-width: 320px) and (max-width: 980px){
+
+    #cardiogram-alt .cardiogram-alt_franja-icon{
+
+        top: 0;
+        left: -12px;
+
+    }
+
+}
+
 #cardiogram-alt .cardiogram-alt_franja-text{
 
     transform: rotate(-90deg);
@@ -615,6 +716,16 @@ ul li::marker{
     position: absolute;
     width: 220px;
     left: -84px;
+
+}
+
+@media (min-width: 320px) and (max-width: 980px){
+
+    #cardiogram-alt .cardiogram-alt_franja-text{
+
+        display: none;
+
+    }
 
 }
 
@@ -629,12 +740,6 @@ ul li::marker{
 #cardiogram-alt .cardiogram-alt_cardiogram{
 
     width: 80%;
-
-}
-
-#cardiogram-alt .cardiogram-alt_cardiogram .image-slider{
-
-
 
 }
 

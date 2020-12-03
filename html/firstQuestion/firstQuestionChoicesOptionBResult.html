@@ -19,12 +19,12 @@
     <div id="first-question-choices-option-b-result" class="position-relative">
         <div id="clinic-history">
             <div class="ed-container full">
-                <div class="ed-item s-100 m-100 lg-35 xl-35 backg-orange">
+                <div class="ed-item s-100 m-40 lg-35 xl-35 backg-orange">
                     <div id="pain-chest-image-alt" class="text-center">
                         <img src="../../img/pain_chest_image_alt.png" alt="Imagen dolor en el pecho alterna">
                     </div>
                 </div>
-                <div class="ed-item s-100 m-100 lg-55 xl-55 backg-orange">
+                <div class="ed-item s-100 m-50 lg-55 xl-55 backg-orange">
 
                     <div class="d-flex">
                         <div class="container-circle-logo-alt">
@@ -52,7 +52,7 @@
                             hallazgos anormales 
                         </p>  
                 </div>
-                <div class="ed-item s-100 m-100 lg-10 xl-10 backg-orange pain-chest-alt_lateral_borders">
+                <div class="ed-item s-100 m-10 lg-10 xl-10 backg-orange pain-chest-alt_lateral_borders">
                     <a href="javascript:void(0)" onclick="activeSection()" class="pain-chest-alt_lateral">
                         <div class="back-icon">
                             <i class="icon-left-big"></i>
@@ -65,13 +65,59 @@
                 </div>
             </div>
         </div>
+        <div id="clinic-history-responsive">
+            <div class="ed-container">
+                <div class="ed-item s-100 m-100">
+                    <div class="text-center">
+                        <img src="../../img/pain_chest_image_alt.png" alt="Imagen dolor en el pecho alterna">
+                    </div>
+                </div>
+                <div class="ed-item s-100 m-100">
+                    <div class="info-with-icons">
+                        <div class="container-circle-logo-alt">
+                            <img src="../../img/icons/edad.png" alt="Edad">
+                            <span><b>47 años</b></span>
+                        </div>
+                        <div class="container-circle-logo-alt">
+                            <img src="../../img/icons/dolor.png" alt="Dolor">
+                            <span><b>Tengo dolor en el pecho</b></span>
+                        </div>
+                    </div>
+                        <p class="text-center text-black">
+                            Viene hace <b>3 días</b> con sensación <b>opresiva en tórax</b> que solo aparece en relación
+                            con el esfuerzo físico, presento dos episodios el día de hoy con dolor esternal,
+                            opresivo <b>de 10 minutos</b> de duración, mientras jugaba con sus hijos, irradiado a
+                            cuello, acompañado de <b>disnea y diaforesis</b>, sin vértigo, ni 
+                            palpitaciones , ni nauseas, como fue de una intensidad de <b>8/10</b> lo hace consultar
+                        </p>
+
+                        <p class="text-center text-black">
+                            Tiene como antecedentes: HTA manejada con <b>losartan</b> y su
+                            padre tuvo un <b>IAM</b>
+                            EF: PA: 143/98, FC: 80/min FR: 20/ min, 
+                            Buenas condiciones generales No hay 
+                            hallazgos anormales 
+                        </p>  
+                </div>
+                <div class="pain-chest-alt_lateral_borders">
+                    <a href="javascript:void(0)" onclick="activeSectionResponsive()" class="pain-chest-alt_lateral">
+                        <div class="back-icon">
+                            <i class="icon-left-big"></i>
+                        </div>
+                        <div class="globe-icon">
+                            <img src="../../img/icons/historia.png" alt="Icono Historia">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
         <div class="ed-container">
             <div class="ed-item s-100 s-mb-2 m-100 m-mb-2 lg-10 xl-10">
                 <div class="choice-identify big">
                     B
                 </div>
             </div>
-            <div class="ed-item s-100 s-mb-2 m-100 m-mb-2 lg-90 xl-90 text-center">
+            <div class="ed-item s-100 s-mb-2 m-100 m-mb-2 lg-90 xl-90 text-center center-vertical">
                 Es la conducta correcta, mientras se toma el electrocardiograma, ampliar la historia, indagar sobre la edad a la cual sufrió el IAM el padre y por
                 otros factores de riesgo cardiovascular (sedentarismo, dislipidemia, aspectos emocionales). Este es el electrocardiograma que se tomo a los 7
                 minutos de ingresar a urgencias:
@@ -168,6 +214,21 @@
         function activeSection(){
 
             let element = document.querySelector("#clinic-history");
+
+            if(element.classList.contains('active')){
+
+                element.classList.remove('active');
+
+            }else{
+
+                element.classList.add('active');
+
+            }
+
+        }
+        function activeSectionResponsive(){
+
+            let element = document.querySelector("#clinic-history-responsive");
 
             if(element.classList.contains('active')){
 
