@@ -21,9 +21,25 @@ header{
 
 }
 
+@media (min-width: 320px) and (max-width: 480px){
+
+    #header-udea-logo{
+
+        width: initial;
+    
+    }
+
+}
+
 footer{
 
     margin-top: auto;
+
+}
+
+footer .ed-container{
+
+    margin: 1em 0;
 
 }
 
@@ -39,6 +55,16 @@ footer{
     background-image: url('../img/backgrounds/tsd.png');
     background-repeat: no-repeat;
     background-position: top right;
+
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+
+    .backg-initial{
+
+        background-image: none;
+    
+    }
 
 }
 
@@ -105,6 +131,23 @@ footer{
 
 }
 
+@media (min-width: 320px) and (max-width: 480px){
+
+    .splide__arrows{
+
+        position: absolute;
+        bottom: -30px;
+        width: 30px;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+
+    }
+
+}
+
+
+
 .splide__arrow--prev{
 
     left: -2em;
@@ -130,6 +173,16 @@ footer{
     justify-content: center;
     align-items: center;
     padding: 0 1em;
+
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+
+    .image-slider{
+
+        height: initial;
+
+    }
 
 }
 
@@ -263,6 +316,7 @@ footer{
     height: 300px;
     text-align: center;
     padding: 2em;
+    margin-bottom: 2em;
     display: block;
     color: #007473;
     box-shadow: 0px 0px 15px #ececec;
@@ -274,6 +328,25 @@ footer{
     height: 400px;
 
 }
+
+@media (min-width: 320px) and (max-width: 1024px){
+
+    .choice-container, .choice-container-alt{
+
+        margin-bottom: 1em;
+        height: auto;
+    
+    }
+
+    .choice-container-alt{
+
+        height: auto;
+    
+    }
+
+}
+
+
 
 .choice-container:hover, .choice-container-alt:hover{
 
@@ -302,8 +375,15 @@ footer{
     font-size: 2rem;
     height: 80px;
     width: 80px;
+    margin: 1em auto;
 
 }
+
+@media (min-width: 320px) and (max-width: 480px){
+
+
+}
+
 
 .choice-first-section_options p{
 
@@ -315,6 +395,7 @@ footer{
 
     display: flex;
     align-items: center;
+    margin: 1em 0;
 
 }
 
@@ -373,6 +454,16 @@ footer{
 
 }
 
+@media (min-width: 320px) and (max-width: 480px){
+
+    .lateral-image{
+
+        width: initial;
+    
+    }
+
+}
+
 ul li::marker{
 
     color: #F5333F;
@@ -383,6 +474,18 @@ ul li::marker{
 
     display: flex;
     align-items: center;
+
+
+}
+
+@media (min-width: 320px) and (max-width: 980px){
+
+    .footer-section{
+
+        margin-bottom: .5em;
+        justify-content: center;
+    
+    }
 
 }
 
@@ -397,6 +500,49 @@ ul li::marker{
     top: 0;
     display: flex;
     align-items: center;
+
+}
+
+#clinic-history-responsive{
+
+    position: fixed;
+    transition: left .5s;
+    z-index: 100;
+    background-color: #FFA400;
+    top: 0;
+    display: none;
+    align-items: center;   
+
+}
+
+.info-with-icons{
+
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#clinic-history-responsive .infor-with-icons .container-circle-logo-alt{
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+
+    #clinic-history{
+
+        display: none;
+
+    }
+
+    #clinic-history-responsive{
+
+
+
+    }
 
 }
 
