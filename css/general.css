@@ -66,6 +66,7 @@ footer .ed-container{
 
     background-image: url('../img/backgrounds/tsd.png');
     background-repeat: no-repeat;
+    background-size: 30%;
     background-position: top right;
 
 }
@@ -627,7 +628,7 @@ ul li::marker{
     height: 100%;
     top: 0;
     right: -70%;
-    transition: right 1s;
+    transition: right .5s;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -740,6 +741,41 @@ ul li::marker{
 #cardiogram-alt .cardiogram-alt_cardiogram{
 
     width: 80%;
+
+}
+
+@media (min-width: 320px) and (max-width: 940px){
+
+    #cardiogram-alt .cardiogram-alt_cardiogram{
+
+        /* height: 500px;
+        overflow: scroll; */
+        width: auto;
+
+    }
+
+    #cardiogram-alt .cardiogram-alt_cardiogram .splide{
+
+        display: none;
+
+    }
+
+    #cardiogram-alt .cardiogram-alt_cardiogram .cardiogram-alt_responsive .cardiogram-alt_responsive-images{
+
+        height: 500px;
+        overflow: scroll;
+
+    }
+
+}
+
+@media (min-width: 941px){
+
+    #cardiogram-alt .cardiogram-alt_cardiogram .cardiogram-alt_responsive{
+
+        display: none;
+
+    }
 
 }
 
